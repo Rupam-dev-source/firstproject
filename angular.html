@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+    <!-- <div ng-app="" ng-init="firstname='Akash'; lastname='Das'">
+        <p>The full name is: {{firstname+""+lastname}}</p>
+    </div> --> 
+     <!-- <div ng-app="">
+        <h1>Enter a number:</h1>
+        <input type="number" ng-model="n" placeholder="Type a number">
+        <div ng-if="n  !=undefined">
+            <h2 ng-if="n>0"><span ng-bind="n"></span>is positive</h2>
+            <h2 ng-if="n<0"><span ng-bind="n"></span>is negative</h2>
+            <h2 ng-if="n==0"><span ng-bind="n"></span>is zero</h2>
+        </div> -->
+
+        <div ng-app="">
+            <h1>Enter a number:</h1>
+            <input type="number" ng-model="n" placeholder="Type a number">
+            <div ng-if="n  !=undefined">
+                <h2 ng-if="n%2==0"><span ng-bind="n"></span>is even</h2>
+                <h2 ng-if="n%2!=0"><span ng-bind="n"></span>is odd</h2>
+   
+     <!-- <div ng-app="">
+        <h1>Enter the marks:</h1>
+        <input type="number" ng-model="n" placeholder="enter the marks">
+        <div ng-if="n  !=undefined">
+            <h2 ng-if="n>=80 && n<=100"><span ng-bind="n"></span>your grade is "A"</h2>
+            <h2 ng-if="n>=50 && n<=79"><span ng-bind="n"></span>your grade is "B"</h2>
+            <h2 ng-if="n>=25 && n<=49"><span ng-bind="n"></span>your grade is "C"</h2>
+            <h2 ng-if="n>=0 && n<=24"><span ng-bind="n"></span>your grade is "D"</h2>
+        </div>
+    </div>   -->
+    
+    <!-- <div data-ng-app="" data-ng-init="no1=10;no2=5">
+        <h2>Calculator</h2>
+        Number1: <input type="number" ng-model="no1"><br>
+        Number2: <input type="number" ng-model="no2"><br>
+        <p><b>Total:</b>{{no1+no2}}</p>
+    </div>
+
+    <div></div> -->
+
+</body>
+</html>

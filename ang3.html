@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+    <div ng-app="myApp" ng-controller="myCtrl">
+        <p>Select a Degree:</p>
+        <select ng-model="qua">
+            <option ng-repeat="x in deg" value="{{x.model}}">{{x.model}}</option>
+        </select>
+        <h1>Your Qualification: {{qua}}</h1>
+    </div>
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl', function($scope){
+            $scope.deg = [
+                {model : "Secondary"},
+                {model : "Higher Secondary"},
+                {model : "Graduation"}
+            ];
+        });
+    </script>
+    <!-- <form>
+        pick a topic:
+        <input type="radio" ng-model="myVar" value="html">Html
+        <input type="radio" ng-model="myVar" value="css">Css
+        <input type="radio" ng-model="myVar" value="js">Javascript
+    </form>
+    <div ng-switch="myVar">
+        <div ng-switch-when="html">
+            <h1>Html</h1>
+            <p>body of the web</p>
+        </div>
+        <div ng-switch-when="css">
+            <h1>Css</h1>
+            <p>style of web</p>
+        </div>
+        <div ng-switch-when="js">
+            <h1>Javascript</h1>
+            <p>logic of the web</p>
+        </div>
+    </div> -->
+</body>
+</html>
